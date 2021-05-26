@@ -4,6 +4,7 @@ const navigatorStyles = {
   header: header,
   tab: {
     tabBarIconOptions,
+    cartTabStyle,
   },
 };
 
@@ -18,6 +19,17 @@ const header = {
     textAlign: 'center',
   },
 };
+
+function cartTabStyle() {
+  return {
+    title: 'Meu Carrinho',
+    tabBarBadge: 3,
+    tabBarBadgeStyle: {
+      backgroundColor: '#89FB97',
+      marginLeft: 3,
+    },
+  };
+}
 
 /** FUNÇÕES */
 function tabBarIconOptions({route, focused, color, size}) {

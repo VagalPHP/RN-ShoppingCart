@@ -43,7 +43,7 @@ export default class App extends Component {
           <Tab.Screen
             name="Cart"
             component={CartScreen}
-            options={{title: 'Meu Carrinho'}}></Tab.Screen>
+            options={navigatorStyles.tab.cartTabStyle()}></Tab.Screen>
         </Tab.Navigator>
       </NavigationContainer>
     );
